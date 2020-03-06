@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>demo</title> 
+        <style>
+            div{
+                width:450px;
+                margin:auto;
+            }
+            fieldset{
+                width:400px;
+                height:540px;
+            }
+            input{
+                width:400px;
+                height:25px;
+                margin:9px auto;
+            }
+            #dangan{
+                font-size:20px;
+                color: crimson;
+            }
+        </style>
+    </head>
+   
+    <body>
+        <div>
+        <h1>学生信息</h1>
+        <fieldset>
+            <legend id="dangan">学生档案</legend>
+            <form method="get" action="#S">
+            姓名：<br/>
+            <input type="text" name="name1" placeholder="请输入姓名" required/><br/>
+            学号：<br/>
+            <input type="number" name="number1" min="1" max="100" step="1" placeholder="请输入学号" required/><br/>
+            手机号码：<br/>
+            <input type="tel" name="tel1" placeholder="请输入手机号" required/><br/>
+            邮箱地址：<br/>
+            <input type="email" name="email1" placeholder="请输入邮箱地址" required/><br/>
+            录取学校：<br/>
+            <input type="search" name="search1" list="names"/><br/>
+            <datalist id="names">
+                <option>河北师范大学</option>
+                <option>河北师范大学汇华学院</option>
+                <option>河北科技大学</option>
+                <option>河北地质大学</option>
+                <option>河北医科大学</option>
+                <option>石家庄铁道大学</option>
+            </datalist>
+            入学成绩：<br/>
+            <input type="text" name="grade1"/><br/>
+            入学时间：<br/>
+            <input type="date" name="date1"/><br/>
+            <input type="submit" name="sub"/>
+            </form>
+        </fieldset>
+        </div>
+    </body>
+</html>
